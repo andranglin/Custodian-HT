@@ -1,0 +1,61 @@
+﻿{
+    "Version": "2.2.18",
+    "LastUpdated": "",
+    "Paths": {
+        "Output": "Output",
+        "Config": "Config",
+        "Logs": "Output\\Logs",
+        "Tools": "Tools",
+        "Modules": "Modules",
+        "Scripts": "Scripts",
+        "Temp": "Output\\Temp"
+    },
+    "Tools": {
+        "EZTools": "Tools\\EZTools",
+        "Volatility3": "Tools\\Volatility3",
+        "KAPE": "Tools\\KAPE",
+        "Chainsaw": "Tools\\Chainsaw",
+        "Sigma": "Tools\\Sigma",
+        "Hayabusa": "Tools\\Hayabusa",
+        "YARA": "Tools\\YARA",
+        "PSTools": "Tools\\PSTools",
+        "DumpIt": "Tools\\DumpIt",
+        "AVML": "Tools\\AVML",
+        "Loki": "Tools\\Loki"
+    },
+    "Settings": {
+        "LogLevel": "INFO",
+        "EnableOSINT": true,
+        "DefaultTimeout": 30,
+        "MaxLogAge": 30,
+        "MaxCacheAge": 7,
+        "EnableMemoryAnalysis": true,
+        "MaxConcurrentScans": 5,
+        "EnableRemoteCollection": true,
+        "DefaultTimespan": 7,
+        "MaxEventLogEntries": 10000,
+        "AutoGenerateReports": true
+    },
+    "RemoteDefaults": {
+        "WinRMPort": 5985,
+        "WinRMPortHTTPS": 5986,
+        "SSHPort": 22,
+        "SMBPort": 445,
+        "ConnectionTimeout": 30
+    },
+    "KAPE": {
+        "DefaultTargets": "!SANS_Triage",
+        "DefaultModules": "!EZParser"
+    },
+    "APIKeys": {
+        "VirusTotal": "",
+        "AbuseIPDB": "",
+        "AlienVault": "",
+        "URLhaus": "",
+        "Malshare": "",
+        "HybridAnalysis": "",
+        "Shodan": "",
+        "GreyNoise": ""
+    }
+}
+

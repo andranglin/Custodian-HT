@@ -1,0 +1,119 @@
+# Custodian-HT .gitignore
+
+# =============================================================================
+# Output directories (contain evidence - never commit)
+# =============================================================================
+Output/
+*.dmp
+*.raw
+*.lime
+*.zip
+*.7z
+
+# =============================================================================
+# Configuration with sensitive data
+# =============================================================================
+Config/Custodian-HT.json
+
+# Keep template
+!Config/Custodian-HT.json.template
+
+# =============================================================================
+# External tools (download separately)
+# =============================================================================
+Tools/kape/
+Tools/hayabusa/
+Tools/chainsaw/
+Tools/yara/
+Tools/PSTools/
+Tools/DumpIt/
+Tools/EZTools/
+Tools/AVML/
+Tools/volatility3/
+Tools/loki/
+Tools/Sysinternals/
+
+# Keep tools directory structure
+!Tools/.gitkeep
+
+# =============================================================================
+# Logs and temporary files
+# =============================================================================
+*.log
+*.tmp
+*.temp
+~$*
+
+# =============================================================================
+# IDE and editor files
+# =============================================================================
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# =============================================================================
+# OS generated files
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# PowerShell specific
+# =============================================================================
+*.ps1xml
+
+# =============================================================================
+# Test and development
+# =============================================================================
+test/
+tests/
+*.tests.ps1
+TestResults/
+
+# =============================================================================
+# Documentation build
+# =============================================================================
+docs/_build/
+docs/site/
+
+# =============================================================================
+# Backup files
+# =============================================================================
+*.bak
+*.backup
+*.old
+*~
+
+# =============================================================================
+# Credentials and secrets (NEVER commit these)
+# =============================================================================
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa
+id_rsa.pub
+known_hosts
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+credentials.json
+secrets.json
+apikeys.json
