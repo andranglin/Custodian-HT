@@ -1,5 +1,5 @@
 ﻿<p align="center">
-  <img src="docs/images/banner.png" alt="Custodian-HT Banner" width="800"/>
+  <img src="Docs/images/banner.png" alt="Custodian-HT Banner" width="800"/>
 </p>
 
 <h1 align="center">Custodian-HT</h1>
